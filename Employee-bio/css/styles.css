@@ -1,0 +1,30 @@
+body{
+	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSARkz1K3M4CWX2z1SkS7pkuGEBl0WJip5Ksx2GT0HewUL7Qa91);
+}
+
+
+
+.bio {
+	width: 50%;
+	font-family: 'Indie Flower', cursive;
+}
+.bio img {
+	width: 40%;
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: dashed;
+	border-color: green;
+	margin: 20px;	
+}
+.bio h1 {
+	color: red;
+}
+.bio h2{
+	color: blue;
+}
+.bio p {
+	color: green;
+}
+.bio:nth-child(2) {
+	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSARkz1K3M4CWX2z1SkS7pkuGEBl0WJip5Ksx2GT0HewUL7Qa91);
+}
