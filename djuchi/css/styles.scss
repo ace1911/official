@@ -1,0 +1,566 @@
+@import url(normalize.css);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+/* variables */
+$black: hsla(0, 0%, 8%, 1);
+$white: hsla(0, 0%, 92%, 1);
+$blue: hsla(180, 56%, 53%, 1);
+$green: hsla(100, 61%, 45%, 1);
+$yellow: hsla(44, 100%, 48%, 1);
+$red: hsla(3, 87%, 61%, 1);
+$purple: hsla(318, 51%, 46%, 1);
+
+/* layout globals */
+.container {
+	border-width: 0 10vw;
+	border-style: solid;
+	border-color: transparent;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body {
+	background-color: lightgrey;
+	margin: 0;
+	padding: 0;
+	
+}
+
+	
+
+nav {
+	display: flex;
+	margin: 0 11% 0 11%;
+		li:first-of-type {
+				padding: 14px;
+				margin-top: 6px;
+  				margin-bottom: 6px;		
+		}
+}
+
+#hero {
+	width: 100%;
+	background-image: url(../images/slider-img1.jpg);
+	background-attachment: fixed;
+	height: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+		h1 {
+			font-size: 100px;
+			color: white;
+			font-family: sans-serif;
+			margin-bottom: 20px;
+			margin-top: 0px;
+			}
+		h2 {
+			font-size: 80px;
+			color: white;
+			font-family: sans-serif;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			}
+	}
+	#what {
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		max-width: 1140px;
+		justify-content: space-around;
+		padding-right: 20px;
+
+		.whatwedo {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			background-color: white;
+			font-size: 25px;
+			color: black;
+			text-align: center;
+			font-family: sans-serif; 
+			padding: 30px;
+
+
+
+
+			p{
+				font-size: 16px;
+				line-height: 1.5;
+				color: grey;
+			}
+		}
+		.group {
+			display: flex;
+			width: 50%;
+			background-image: url(..images/Depositphotos_4767266_original.jpg);
+			height: 100%;	
+			padding-left: 30px;	
+		}
+	}
+	#triple {
+			display: flex;
+			// flex-direction: row;
+			justify-content: space-around;
+			color: white;
+			margin-top: 20px;
+			text-align: center;
+			
+			h1 {
+				font-size: 45px;
+				margin: 0;
+				margin-bottom: 20px;
+			}
+			p{
+				margin: 0;
+				padding-bottom: 40px;
+			 }
+			
+		.quick {
+			display: flex;
+			background-color: $blue;
+			width: 30%;
+			align-items: center;
+			flex-direction: column;
+			padding-top: 50px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+
+		}
+		.support {
+			display: flex;
+			background-color: $green;
+			width: 30%;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 50px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.custom {
+			display: flex;
+			background-color: $yellow;
+			flex-direction: column;
+			width: 30%;
+			align-items: center;
+			padding-top: 50px;
+			padding-left: 10px;
+			padding-right: 10px;	
+		}	
+	}
+	#lastsection {
+		display: flex;
+		padding-top: 20px;
+		margin-bottom: 20px;
+		.help {
+			width: 50%;
+		
+		}
+		.letus {
+			width: 50%;
+			padding: 30px;
+			background-color: $red;
+			
+			h2 {
+				font-size: 45px;
+				color: white;
+				text-align: center;
+
+
+			}
+			p {
+			margin: 0 0 auto;
+			text-align: center;
+			color: white;
+
+			}
+
+		}
+	}
+#computer {
+	width: 100%;
+	background-image: url(../images/parallax-img-1.jpg);
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+	h1 {
+		font-size: 130px;
+		color: white;
+		margin-bottom: 0;
+		text-align: center;
+		
+	}
+	h2 {
+		font-size: 70px;
+		color: white;
+		margin-top: 0;
+		justify-content: center;
+	}
+}
+#port {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	// padding-top: 20px;
+	text-align: center;
+	.box{
+		background-color: white;
+		margin: 10px;
+		padding: 10px;
+		padding-top: 60px;
+	}
+
+		h1 {
+			color: $purple;
+			font-family: sans-serif;
+			font-size: 25px;
+		}
+
+
+
+	.person {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		img {
+			border-radius: 50%;
+		}
+
+	}
+	.woman {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		img {
+			border-radius: 50%;
+		}
+	}
+	.third {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		img {
+			border-radius: 50%;
+		}
+	}
+}
+#tiles {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 11% 0 11%;
+	color: white;
+	background-color: $green;
+	img {
+		margin: 20px 30px 30px 0;
+	}	
+	h3 {
+		background-color: $yellow;
+		display: flex;
+		width: 270px;
+		height: 270px;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+#six {	
+		padding: 0 11% 0 11%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		justify-content: space-around;
+	div{
+		
+		background-color: white;
+		width: 570px;
+		height: 370px;
+	}
+}
+#seven {
+		display: flex;
+		padding: 0 11% 0 11%;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		justify-content: space-around;
+	div {
+		background-color: white;
+		width: 570px;
+		height: 370px;
+	}
+}
+#about {
+	  display: flex;
+	  justify-content: space-around;
+	  font-size: 15px;
+	  line-height: 20px;
+	  color: #888;
+	  background: #242424;
+	  h4 {
+	  	color: white;
+	  	font-size: 30px;
+	  }
+	  ul li {
+	  	  	list-style: none;
+	  		color: grey;
+	  }
+}
+footer {
+	padding: 0;
+  border: none;
+  font-size: 13px;
+  line-height: 60px;
+  color: #888;
+  background: #242424;
+  margin: 0;
+  	p {
+  		margin: 0;
+  	}
+}
+main {
+	display: flex;
+	max-width: 100%;
+		#archive {
+	flex:  1;
+	margin-right: 0;
+		h2{
+			font-size: 54px;
+			color: #464646;
+			font-family: helvetica;
+			margin-top: 0;
+
+			}
+		}
+		#quotes {
+			flex: 5;
+		}
+	}
+
+#page3 {
+		display: flex;
+		padding: 0 11% 0 11%;
+	ul{
+		
+		
+	}
+	
+	h1 {
+			font-size: 54px;
+			color: #464646;
+			font-family: helvitica;
+			margin-top: 0;
+			padding-top: 30px;
+		}
+
+		#anchors {
+			li{
+			font-size: 24px;
+			font-family: sans-serif;
+			color: grey;
+		}
+		}
+		#last {
+			display: flex;
+			h2{
+				font-size: 54px;
+			}
+			justify-content: center;
+	}
+		#order {
+			display: flex;
+
+			ul {
+			flex-direction: column;
+		}
+	}
+}
+ 
+
+
+
+#dropdown {
+	position: relative;
+	
+	&:hover ul {
+		display: block;
+	}
+	ul { 
+		display: none;
+		position: absolute;
+		top: 58px;
+		left: 0;
+	}
+	#drop {
+		margin-top: 60px;
+		width: 100%;
+		background-color: black;
+		li {
+		background-color: black;
+		color: white;
+		padding: 10px;
+		margin-right: 50px;
+		padding-left: 35px;	
+	}
+	li:nth-of-type(1) {
+		padding-left: 40px;
+	}
+}
+}
+#page2 {
+		
+	h1 {
+		font-size: 55px;
+		font-family: sans-serif;
+		color: grey;
+	}
+	ul{
+		display: flex;
+	}
+	li {
+		font-size: 24px;
+		color: grey;
+	}
+}
+#rightside {
+		flex: 1;
+
+	h3 {
+		font-size: 14px;
+		color: $purple;
+	}
+	/*#para {
+		color: $purple;
+		font-size: 20px;
+		font-style: bold;
+	}*/
+	.may {
+		display: flex;
+		width: 370px;
+		height: 69px;
+		img {
+			width: 250px;
+			margin: 0 20px 20px 0;
+		}
+	
+		#flex {
+
+		}
+	}
+}
+#month {
+	h2 {
+		font-size: 54px;
+
+	}
+	ul {
+		font-size: 18px;
+	}
+}
+
+	
+
+
+/* flexbox */
+#utilnav {
+	display: flex;
+	li:nth-of-type(4){
+		margin-left: auto;
+	}
+}
+
+
+
+
+/* styles */
+#utilnav {
+	background-color: $black;
+	color: $white;
+	font-size: 80%;
+	padding: 10px;
+	li {
+		margin: 0 10px;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+		li {
+			text-align: center;
+			flex: 1;
+			padding: 50px 25px;
+			a{
+				padding: 10px;
+				flex: 1;
+			}
+		}
+		li:nth-of-type(1){
+
+			background-color: white;
+			margin-right: 35px;
+			background-image: url(../img/logo.png);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			flex: 2;
+		}
+		li:nth-of-type(2){
+			background-color: $blue;
+		}
+		li:nth-of-type(3){
+			background-color: $green;
+			
+		}
+		li:nth-of-type(4){
+			background-color: $yellow;
+		}
+		li:nth-of-type(5){
+			background-color: $red;
+		}
+		li:nth-of-type(6){
+			background-color: $purple;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

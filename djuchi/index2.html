@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<head>
+<style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+ </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	<meta charset="UTF-8">
+	<title>Djuci</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<ul id="utilnav">
+			<li><i class="fa fa-map-marker"></i> 4578 Marmora Road, Glasgow D04 89GR</li>
+			<li><i class="fa fa-mobile"></i> 800-2345-6789</li>
+			<li><i class="fa fa-envelope"></i> info@demolink.org</li>
+			<li>twitter</li>
+			<li>facebook</li>
+		</ul>
+		<nav>
+
+			<ul>
+				<li><img src="images/logo.png"></li>
+				
+				<li><a href="index.html">Home</a></li>
+				
+				<li id="dropdown"><a href="index.html#what">About</a>					
+					<ul id="drop">
+						<li><a href="index2.html">Testimonials</li>
+						<li><a href="index3.html">Archives</li>
+						<li><a href="#">FAQs</li>
+					</ul></li>
+				<li><a href="index.html#tiles">Portfolio</a></li>
+				<li><a href="index.html#six">Blog</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</nav>
+	</header>
+		<div id="page2" class="container">
+			<h1>Testimonials</h1>
+				<div id="anchor">
+					<ul>
+						<li><a href="#">Home</a>//</li>
+						<li><a href="#">About </a>//</li>
+						<li><a href="#">Testimonials</a></li>
+					</ul>
+			</div>
+		</div>
+	<main id="page2main" class="container">
+		<div id="quotes">
+			
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, delectus laboriosam minima officiis reprehenderit est, impedit molestias aspernatur quas reiciendis? Harum esse reprehenderit minima iure asperiores modi alias rem facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet veritatis provident inventore rem, ipsam asperiores tempora. Iste non omnis sunt eaque, ducimus voluptatem dolore, et, assumenda expedita eos ipsum.
+					<br><span class="manager"> Mr. John Anderson, Designer</span><br>
+					<a href="http://demolink.org">http://demolink.org</a>
+					</p>
+				</div>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, delectus laboriosam minima officiis reprehenderit est, impedit molestias aspernatur quas reiciendis? Harum esse reprehenderit minima iure asperiores modi alias rem facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet veritatis provident inventore rem, ipsam asperiores tempora. Iste non omnis sunt eaque, ducimus voluptatem dolore, et, assumenda expedita eos ipsum.
+						<br><span class="manager"> Mr. John Anderson, Designer</span><br>
+						<a href="http://demolink.org">http://demolink.org</a>
+					</p>
+				</div>				
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, delectus laboriosam minima officiis reprehenderit est, impedit molestias aspernatur quas reiciendis? Harum esse reprehenderit minima iure asperiores modi alias rem facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet veritatis provident inventore rem, ipsam asperiores tempora. Iste non omnis sunt eaque, ducimus voluptatem dolore, et, assumenda expedita eos ipsum.
+						<br><span class="manager"> Mr. John Anderson, Designer</span><br>
+						<a href="http://demolink.org">http://demolink.org</a>
+					</p>
+				</div>
+		</div>
+		<div id="archive">
+			<h2>Archives</h2>
+				<ul>
+					<li><a href="#"></a>May 2014</li>
+					<li><a href="#"></a>March 2013</li>
+					<li><a href="#"></a>February 2013</li>
+					<li><a href="#"></a>January 2013</li>
+					<li><a href="#"></a>December 2012</li>
+					<li><a href="#"></a>May 2012</li>
+				</ul>
+		
+			<h2>Categories</h2>
+				<ul>
+					<li><a href="#"></a>Coding</li>
+					<li><a href="#"></a>CSS3</li>
+					<li><a href="#"></a>HTML5</li>
+					<li><a href="#"></a>Uncategorized</li>
+					<li><a href="#"></a>Webdesign</li>
+				</ul>
+			
+			<h2>Recent posts</h2>
+
+			<div id="rightside">
+				<div class="may">
+					<img src="images/blog-img1-570x370.jpg" height="100" width="100">
+					<div class="flex">
+						<h3>MAY 27, 2014</h3>
+						<a href="#">Excepteur sint occaecat</a>
+						<p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac,</p>
+					</div>
+				</div>
+
+				<p class="para">READ MORE</p>
+
+				<div class="may">
+						<img src="images/blog-img2-570x370.jpg" height="100" width="100">
+					<div class="flex">
+						<h3>MARCH 14, 2013</h3>
+						<a href="#">Voluptate velit esse cillum dolore</a>
+						<p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac,</p>
+					</div>
+				</div>
+
+				<p class="para">READ MORE</p>
+
+				<div class="may">
+					<img src="images/Depositphotos_11184173_original-Copy-600x380.jpg" height="100" width="100">
+					<div class="flex">
+						<h3>MARCH 5, 2013</h3>
+						<a href="#"></a>
+						<p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac,</p>
+					</div>
+					
+				</div>
+
+				<p class="para">READ MORE</p>
+
+			</div>
+			</div>
+			</div>
+</main>
+	<section id="about">
+		
+			<ul class="list">
+				<h4>About</h4>
+				<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Conse ctetur adipisicing</a></li>
+				<li><a href="#">Elit sed do eiusmod tempor</a></li>
+				<li><a href="#">Incididunt ut labore</a></li>
+				<li><a href="#">Et dolore magna aliqua</a></li>
+				<li><a href="#">Ut enim ad minim veniam</a></li>
+				<li><a href="#">Quis nostrud exercitat</a></li>
+			</ul>
+			
+			<ul>
+				<h4>Services</h4>
+				<li><a href="#">Conse ctetur adipisicing</a></li>
+				<li><a href="#">Elit sed do eiusmod tempor</a></li>
+				<li><a href="#">Incididunt ut labore</a></li>
+				<li><a href="#">Et dolore magna aliqua</a></li>
+				<li><a href="#">Ut enim ad minim veniam</a></li>
+				<li><a href="#">Quis nostrud exercitat</a></li>
+			</ul>
+				<div id="map-canvas"></div>
+	</section>
+	<footer>
+		<p>Djuci © 2015. Privacy Policy</p>
+	</footer>
+	
+</body>
+
+</html>

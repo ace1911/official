@@ -1,0 +1,156 @@
+@import "reset";
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+$bgc: blue;
+$sn: red;
+$color: black;
+$user: lightblue;
+ 
+
+html,body{
+  height: 100%;
+  margin: 0;
+}
+%bord {
+  cursor: pointer;
+  text-decoration: underline;
+  border-color: red;
+
+}
+$base-color: hsla(222, 50%, 40%, 1);
+$light-base: lighten($base-color, 20);
+$dark-base: darken($base-color, 20);
+$white-base: lighten(grayscale($base-color), 30);
+$black-base: darken(grayscale($base-color), 30);
+$comp-base: complement($base-color);
+ 
+ @mixin border-mixin($width, $style, $color) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+
+  }
+@mixin gradient-mixin($dir, $bgc, $color) {
+    background-image: linear-gradient(to $dir, $bgc, $color);
+
+}
+#friends {
+  width: 252px;
+  float: left;
+  
+}
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li::before,
+  li::after {
+    @extend %clearfix;
+  }
+  img {
+    @include border-mixin(2px, double, $color);
+    //@extend %bill;
+    width: 50px;
+    float: left;
+    border-radius: 80%;
+    border-width: 5px;
+
+  }
+  li {
+    @include gradient-mixin($bgc,$color);
+    @include border-mixin(10px, solid, limegreen);
+    //border-style: solid;
+    padding: 5px;
+    //background-image: linear-gradient(lighten($base-color, 10), red);
+    border-radius: 20px;
+    &.active {
+      @include gradient-mixin(left,$color,$bgc);
+      //background-image: linear-gradient($base-color, $white-base);
+      border-radius: 20px;
+      border-style: dashed;
+    button {
+      background-color: $base-color;
+      padding: 5px;
+
+    } 
+
+
+    } 
+  }
+  %bordering {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $black-base;
+  }
+
+
+
+  
+
+  h2, h3 {
+    margin: 0;
+    font-size: 16px;     
+    
+  }
+  h2 {
+    font-weight: bolder;
+  }
+  h3{
+    font-weight: 100;
+    font-style: italic;
+  }
+  li div:first-of-type {
+    width: 150px;
+    float: left;
+  }
+  li div:last-of-type {
+    width: 150px;
+    float: right;
+  }
+
+  h2 {
+    color: $sn;
+  }
+  button {
+    @include border-mixin(3px, solid, darkblue);
+    //background-color: $white-base;
+    border-radius: 6px;
+    float: right;
+  } 
+
+  
+
+  #message {
+    height: 100%;
+    @extend %message;
+
+
+  }
+  h3 {
+    color: darken($base-color, 20);
+  }
+
+
+  main {
+    width: 75%;
+    margin: 0 auto; 
+
+  }
+  #messagebox {
+    @mixin gradient-mixin($bgc,$color);
+    width: 100%;
+    height: 100%;
+    //background-image: linear-gradient(lighten($base-color, 10),green);
+    border-radius: 20px;
+    @include border-mixin(50px, groove, green);
+
+}
+  
+  #friends li h2,
+  #friends li h3{
+    &:hover {
+      @extend %bord;
+    }  
+  }

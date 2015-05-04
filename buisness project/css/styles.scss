@@ -1,0 +1,159 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+%clearfix {
+	content: "";
+	display: auto;
+	clear: both;
+}
+main {
+	margin: 0 auto;
+	width: 75%;
+}
+
+.main {
+	position: relative;
+	p {
+	 	position: absolute; 
+		top: 350px; 
+		left: 0; 
+		width: 100%; 
+		color: white;
+		font-size: 40px;
+		font-family: sans-serif;	
+	}
+
+
+	h5 {
+		 position: absolute; 
+		  top: 50px; 
+		  left: 0; 
+		  width: 100%; 
+		  color: white;
+		  font-size: 120px;
+		  font-family: sans-serif;
+		  
+	}
+}
+.expert {
+	font-size: 48px;
+	color: #5ea3cb;
+	text-align: center;
+	padding: 60px;
+}
+h2 {
+
+	font-size: 26px;
+	color: #5ea3cb;
+
+}
+.one {
+	div {
+		display: inline-block;
+		width: 33%;
+
+	}
+	img {
+		float: left;
+		display: inline-block;	
+	}
+	h2{
+		background-color: transparentize(grey, .9);
+		padding-left: 70px;
+		margin-top: 0px;
+		height: 48px;
+		padding-top: 10px;
+		width: 90%;
+
+	}
+}
+.icons {
+		float: right;
+		div{
+			float: left;
+		}
+		a {
+			// float: left;
+			// display: inline-block;
+		}
+}
+
+
+nav {
+	margin: 0 auto;
+	width: 75%;
+	font-family: sans-serif;
+	&::before,
+	&::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	h1{
+		float: left;
+		width: 50%;
+		font-size: 48px;
+		&::first-letter {
+			background-color: #5ea3cb;
+			color: white;
+			padding: 8px, 10px;
+		}
+	}
+	div ul{
+		width: 50%;
+		float: right;
+		padding: 13px 0;
+		li{
+			list-style: none;
+			display: inline-block;
+			a{
+				font-size: 18px;
+				padding: 10px 20px;
+				text-decoration: none;
+				&:hover{
+					background-color: #5ea3cb;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+h3 {
+	color: #5ea3cb;
+	font-size: 28px;
+	font-family: sans-serif;
+	text-transform: none;
+}
+
+h4 {
+	color: #5ea3cb;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+#pal {
+	ul{
+		list-style: none;
+		li{
+			list-style: none;
+			color: #5ea3cb;
+		}
+	}
+}
+
+#word {
+	h2 {
+		
+		font-size: 32px;
+		
+	}
+	img {
+		width: 100%;
+	}
+}
+#image {
+	h2 {
+
+		  background-color: grey;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<head>
+<style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+ </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	<meta charset="UTF-8">
+	<title>Djuci</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<ul id="utilnav">
+			<li><i class="fa fa-map-marker"></i> 4578 Marmora Road, Glasgow D04 89GR</li>
+			<li><i class="fa fa-mobile"></i> 800-2345-6789</li>
+			<li><i class="fa fa-envelope"></i> info@demolink.org</li>
+			<li>twitter</li>
+			<li>facebook</li>
+		</ul>
+		<nav>
+			<ul>
+				<li><img src="images/logo.png"></li>
+				<li><a href="index.html">Home</a></li>
+					<li id="dropdown"><a href="index.html#what">About</a>					
+					<ul id="drop">
+						<li><a href="index2.html">Testimonials</a></li>
+						<li><a href="index3.html">Archives</a></li>
+						<li><a href="#">FAQs</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html#tiles">Portfolio</a></li>
+				<li><a href="index.html#six">Blog</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</nav>
+	</header>
+		<div id="hero">
+			
+			<h1>Creating</h1>
+			<h2>something special for you</h2>
+
+		</div>
+	<div class="container">
+		<div id="what">
+			<div class="whatwedo">
+				<h2>What we do?</h2>
+				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+			</div>
+			<div class="group">
+				<img src="images/Depositphotos_4767266_original.jpg" height="371" width="590">
+			</div>
+		</div>
+		<div id="triple">
+			<div class="quick">
+				<img src="images/icon1.png" height="90" width="90">
+				<h1>Quick installs</h1>
+				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+			</div>
+			<div class="support">
+				<img src="images/icon2.png" height="90" width="90">
+				<h1>Support</h1>
+				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+			</div>
+			<div class="custom">
+				<img src="images/icon3.png" height="90" width="90">
+				<h1>Customizable</h1>
+				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+			</div>
+		</div>
+			<div id="lastsection">
+				<div class="help">
+					<img src="images/Depositphotos_7712645_original-1.jpg" height="371" width="590">
+				</div>
+				<div class="letus">
+					<h2>Let us make a difference in your web design</h2>
+					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+
+				
+			</div>
+	</div>
+	<div id="computer">
+			
+		<h1>24/7<br>customer service</h1>
+		<h2>supported by professionals</h2>
+
+	</div>
+	<div id="port">
+		<div class="person box">
+			<img src="images/team-1-150x150.jpg" height="150" width="150">
+			<h1>Excepteur sint occaecat</h1>
+			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		</div>
+		<div class="woman box">
+			<img src="images/team-2-150x150.jpg" height="150" width="150">
+			<h1>Ad minim venia</h1>
+			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		</div>
+		<div class="third box">
+			<img src="images/team-3-150x150.jpg" height="150" width="150">
+			<h1>Quis nostrud</h1>
+			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		</div>
+	</div>
+<section id="tiles">
+	
+			<img src="images/c-750x750.jpg"height="270" width="270">
+		
+			<img src="images/d-750x750.jpg"height="270" width="270">
+		
+		
+			<img src="images/a-750x750.jpg"height="270" width="270">
+	
+			<img src="images/b-750x750.jpg"height="270" width="270">
+		
+	
+			<img src="images/g-750x750.jpg"height="270" width="270">
+		
+			<img src="images/f-750x750.jpg"height="270" width="270">
+		
+			<img src="images/e-750x750.jpg"height="270" width="270">
+		
+			<h3>See all<br> projects</h3>
+	
+</section>
+	<section id="six">
+		<div>
+			<h1 class="blog-item-date-day">27</h1>
+			<h2 class="blog-item-date-month">May</h2>
+			<h3>Excepteur sint occaecat</h3>
+			<p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum dolor sit amet, consectetue</p>
+		</div>
+
+		<img src="images/blog-img1-570x370.jpg" height="370" width="570">
+
+	</section>
+	<section id="seven">
+			<img src="images/blog-img2-570x370.jpg" height="370" width="570">
+		<div>
+			<h1 class="blog-item-date-day">14</h1>
+			<h2 class="blog-item-date-month">March</h2>
+			<h3>Voluptate velit esse cillum dolore</h3>
+			<p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum dolor sit amet, consectetue</p>	
+		</div>
+
+	</section>	
+			
+
+
+	<section id="about">
+		
+			<ul class="list">
+				<h4>About</h4>
+				<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Conse ctetur adipisicing</a></li>
+				<li><a href="#">Elit sed do eiusmod tempor</a></li>
+				<li><a href="#">Incididunt ut labore</a></li>
+				<li><a href="#">Et dolore magna aliqua</a></li>
+				<li><a href="#">Ut enim ad minim veniam</a></li>
+				<li><a href="#">Quis nostrud exercitat</a></li>
+			</ul>
+			
+			<ul>
+				<h4>Services</h4>
+				<li><a href="#">Conse ctetur adipisicing</a></li>
+				<li><a href="#">Elit sed do eiusmod tempor</a></li>
+				<li><a href="#">Incididunt ut labore</a></li>
+				<li><a href="#">Et dolore magna aliqua</a></li>
+				<li><a href="#">Ut enim ad minim veniam</a></li>
+				<li><a href="#">Quis nostrud exercitat</a></li>
+			</ul>
+				<div id="map-canvas"></div>
+	</section>
+	<footer>
+		<p>Djuci © 2015. Privacy Policy</p>
+	</footer>
+	
+</body>
+
+</html>
